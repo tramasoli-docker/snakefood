@@ -4,7 +4,7 @@
 
 Geração de lista de dependências em APPs Django. Para mais informações visite 
 
-## Prossupostos
+## Pressupostos
 
 ### Estrutura do repositório git
 
@@ -34,6 +34,6 @@ Imagem herda de python:2.7-jessie (portanto é Debian 8).
 #### Dependências internas da APP
 
 ```shell
-APP_DIR=/home/tramasoli/git/mprs/sites/intra/django17/
-docker run --rm -v $APP_DIR:/opt/workdir uai.mp.rs.gov.br:8082/uai/snakefood /bin/bash -c "sfood /opt/workdir | sfood-cluster $(find $APP_DIR -maxdepth 1 -type d -exec basename {} \; | xargs) | grep \", ('/opt/workdir',\" | sed \"s/'\/opt\/workdir'\, //g\""
+APP_DIR=/home/tramasoli/git/sites/django17/
+docker run --rm -v $APP_DIR:/opt/workdir tramasoli/snakefood /bin/bash -c "sfood /opt/workdir | sfood-cluster $(find $APP_DIR -maxdepth 1 -type d -exec basename {} \; | xargs) | grep \", ('/opt/workdir',\" | sed \"s/'\/opt\/workdir'\, //g\""
 ```
