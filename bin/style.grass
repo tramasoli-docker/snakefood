@@ -1,0 +1,35 @@
+{
+  "node": {
+    "diameter": "50px",
+    "color": "#A5ABB6",
+    "border-color": "#9AA1AC",
+    "border-width": "2px",
+    "text-color-internal": "#FFFFFF",
+    "font-size": "10px"
+  },
+  "relationship": {
+    "color": "#A5ABB6",
+    "shaft-width": "1px",
+    "font-size": "8px",
+    "padding": "3px",
+    "text-color-external": "#000000",
+    "text-color-internal": "#FFFFFF",
+    "caption": "<type>"
+  },
+  "node.PythonApp": {
+    "diameter": "80px",
+    "color": "#4ea52e",
+    "border-color": "#22351b",
+    "border-width": "2px",
+    "text-color-internal": "#FFFFFF",
+    "font-size": "10px"
+  },
+  "node.PythonModule": {
+    "diameter": "70px",
+    "color": "#4fb6e2",
+    "border-color": "#253238",
+    "border-width": "1px",
+    "text-color-internal": "#000000",
+    "font-size": "10px"
+  }
+}
